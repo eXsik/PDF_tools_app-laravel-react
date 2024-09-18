@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 
-import NavBar from "../Components/Navbar";
-import Sidebar from "../Components/authenticated/Sidebar";
+import NavBar from "../components/Navbar";
+import Sidebar from "../components/authenticated/Sidebar";
 
 export default function Authenticated({ children }: PropsWithChildren) {
     return (

@@ -9,8 +9,8 @@ import {
     BsSun,
 } from "react-icons/bs";
 
-import ApplicationLogo from "../Components/ApplicationLogo";
-import Dropdown from "../Components/Dropdown";
+import ApplicationLogo from "./ApplicationLogo";
+import Dropdown from "./Dropdown";
 
 export default function NavBar() {
     const { user } = usePage<PageProps>().props.auth;
