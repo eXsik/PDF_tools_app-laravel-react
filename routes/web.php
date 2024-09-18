@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MergePdfController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -8,7 +9,7 @@ use Inertia\Inertia;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/merge_pdf', fn() => 'page of merge_pdf')->name('merge_pdf');
+Route::get('/merge_pdf', [MergePdfController::class, 'index'])->name('merge_pdf');
 Route::get('/split_pdf', fn() => 'page of split_pdf')->name('split_pdf');
 Route::get('/pdf_to_jpg', fn() => 'page of pdf_to_jpg')->name('pdf_to_jpg');
 Route::get('/jpg_to_pdf', fn() => 'page of jpg_to_pdf')->name('jpg_to_pdf');
